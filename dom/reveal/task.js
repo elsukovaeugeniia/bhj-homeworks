@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     reveals.forEach(element => {
       const elementTop = element.getBoundingClientRect().top;
-      const elementVisible = 150; // Отступ от верха экрана (в пикселях)
+      const elementVisible = 150; 
 
 
       if (elementTop < windowHeight - elementVisible) {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Вызываем проверку при загрузке, прокрутке и изменении размера окна
+  
   window.addEventListener('scroll', checkReveal);
   window.addEventListener('resize', checkReveal);
   checkReveal();
